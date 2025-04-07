@@ -3,43 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>✨ Feliz Cumpleaños Virsol ✨</title>
+    <title>¡Feliz Cumpleaños Virsol!</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
-    <div class="container">
-        <div class="birthday-card">
-            <div class="cover">
-                <div class="front"></div>
-                <div class="back"></div>
-            </div>
-            <div class="content">
-                <h1 class="title">¡Feliz Cumpleaños Virsol!</h1>
-                <p class="message">Que este día esté lleno de alegría, amor y muchas bendiciones. ¡Que todos tus deseos se hagan realidad!</p>
-                <div class="balloons"></div>
-                <div class="cake">
-                    <div class="plate"></div>
-                    <div class="layer layer-bottom"></div>
-                    <div class="layer layer-middle"></div>
-                    <div class="layer layer-top"></div>
-                    <div class="icing"></div>
-                    <div class="candle"></div>
-                    <div class="flame"></div>
+    <div class="birthday-container">
+        <h1 class="birthday-title">¡Feliz Cumpleaños Virsol!</h1>
+        
+        <div class="photo-carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="solange1.jpg" alt="Foto 1">
                 </div>
-                <button class="confetti-btn" id="celebrateBtn">¡Celebrar!</button>
+                <div class="carousel-item">
+                    <img src="solange2.jpg" alt="Foto 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="solange3.jpg" alt="Foto 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="solange4.jpg" alt="Foto 4">
+                </div>
+                <div class="carousel-item">
+                    <img src="solange5.jpg" alt="Foto 5">
+                </div>
             </div>
+            <button class="carousel-control prev">❮</button>
+            <button class="carousel-control next">❯</button>
         </div>
+        
+        <p class="birthday-message">Que este día esté lleno de alegría y bendiciones</p>
+        
+        <button id="celebrateBtn" class="celebrate-button">¡Celebrar!</button>
     </div>
 
     <canvas id="confetti-canvas"></canvas>
-    <audio id="birthday-song" loop>
-        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
-    </audio>
-
-    <!-- Añadimos la librería de confeti directamente -->
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    
+    <audio id="birthdayAudio" src="happy-birthday.mp3"></audio>
+    
     <script src="script.js"></script>
 </body>
 </html>
