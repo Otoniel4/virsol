@@ -259,7 +259,7 @@ body {
 }
 
 .cake-container {
-    margin: 30px auto;
+    margin: 20px auto;
     width: 150px;
     height: 180px;
     position: relative;
@@ -287,7 +287,7 @@ body {
 
 .layer.top {
     width: 70px;
-    height: 25px;
+    height: 20px;
     background: linear-gradient(to right, #f8a5c2, #f5b7b1);
     bottom: 75px;
     animation: layer-jump 3s infinite;
@@ -337,7 +337,7 @@ body {
     height: 25px;
     background: linear-gradient(to top, orange, yellow);
     border-radius: 50% 50% 20% 20%;
-    bottom: 130px;
+    bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
     animation: flicker 0.5s infinite alternate;
@@ -345,15 +345,6 @@ body {
     z-index: 5;
 }
 
-@keyframes flicker {
-    0% { transform: translateX(-50%) scale(1); opacity: 1; }
-    100% { transform: translateX(-50%) scale(1.1); opacity: 0.8; }
-}
-
-@keyframes layer-jump {
-    0%, 100% { transform: translateX(-50%) translateY(0); }
-    50% { transform: translateX(-50%) translateY(-10px); }
-}
 
 .celebrate-button {
     background: linear-gradient(45deg, var(--primary), var(--secondary));

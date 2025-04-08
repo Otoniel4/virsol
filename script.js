@@ -159,6 +159,5 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    createFloatingElements();
-    
+    createFloatingElements();S
 }); 
